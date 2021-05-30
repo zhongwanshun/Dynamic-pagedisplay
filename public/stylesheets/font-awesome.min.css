@@ -219,10 +219,6 @@
     content: "\f001"
 }
 
-.fa-search:before {
-    content: "\f002"
-}
-
 .fa-envelope-o:before {
     content: "\f003"
 }
@@ -793,19 +789,6 @@
 
 .fa-phone-square:before {
     content: "\f098"
-}
-
-.fa-twitter:before {
-    content: "\f099"
-}
-
-.fa-facebook-f:before,
-.fa-facebook:before {
-    content: "\f09a"
-}
-
-.fa-github:before {
-    content: "\f09b"
 }
 
 .fa-unlock:before {
