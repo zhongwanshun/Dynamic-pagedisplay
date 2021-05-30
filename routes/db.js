@@ -1,17 +1,17 @@
 var mysql = require('mysql');
 var db = {};
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1234',
-    database: 'home_work'
-});
+db.query = function(sql, callback) {
+    var con = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '1234',
+        database: 'home_work'
+    });
+    con.query(sql, (err, results) => {
+        callback(err, results);
+    });
+    con.end();
+}
 
-connection.connect();
 
-db.query(sql, function(error, results, fields) {
-    if (error) throw error;
-    callback(results);
-});
-
-connection.end();
+module.exports = db;
