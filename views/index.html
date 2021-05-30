@@ -51,23 +51,7 @@
                                 </li>
                                 <li><a href="about">关于</a></li>
                                 <li><a href="portfolio">Portfolio</a></li>
-                                <li class="has-child">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="404">404</a></li>
-                                        <li><a href="about">关于</a></li>
-                                        <li><a href="career">Career</a></li>
-                                        <li><a href="coming-soon">Coming Soon</a></li>
-                                        <li><a href="contact">Contact</a></li>
-                                        <li><a href="faq">Faq</a></li>
-                                        <li><a href="portfolio">Portfolio</a></li>
-                                        <li><a href="pricing">Pricing</a></li>
-                                        <li><a href="service">Service</a></li>
-                                        <li><a href="team">Team</a></li>
-                                        <li><a href="testimonial">Testimonial</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="contact">联系我们</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -136,38 +120,7 @@
             </div>
         </div>
         <div class="brand-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6 single-brand">
-                        <div class="inner">
-                            <a href="#">
-                                <img src="/www/images/brand1.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 single-brand">
-                        <div class="inner">
-                            <a href="#">
-                                <img src="/www/images/brand2.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 single-brand">
-                        <div class="inner">
-                            <a href="#">
-                                <img src="/www/images/brand3.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 single-brand">
-                        <div class="inner">
-                            <a href="#">
-                                <img src="/www/images/brand4.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
         <div class="service-area bg2 sp">
             <div class="container">
@@ -176,119 +129,29 @@
                     <p>我们业务广泛主要致力于以下业务</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 single-service">
-                        <div class="inner">
-                            <div class="title">
-                                <div class="icon">
-                                    <i class="fa fa-film"></i>
-                                </div>
-                                <h4>美食视频</h4>
-                            </div>
-                            <div class="content">
-                                <p>这里有各个国家的美食制作视频讲解</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-area sp">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Latest Work</h2>
-                    <p>我们业务广泛主要致力于以下业务</p>
-                </div>
-                <div class="row">
-                    <div class="single-portfolio col-md-4">
-                        <div class="inner">
-                            <div class="portfolio-img">
-                                <img src="/www/images/portfolio6.jpg" alt="portfolio-image">
-                                <div class="hover-content">
-                                    <div>
-                                        <a href="#" class="button">View Case Study</a>
+                    <%
+                 for(var o of data){
+                    %>
+                        <div class="col-lg-4 col-md-6 single-service">
+                            <div class="inner">
+                                <div class="title">
+                                    <div class="icon">
+                                        <i class="fa fa-film"></i>
                                     </div>
+                                    <h4>
+                                        <%= o.title%>
+                                    </h4>
                                 </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <a href="#">
-                                    <h3>The Back Chiropractor</h3>
-                                </a>
-                                <span>Ceramics, Design</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center" data-margin="40px 0 0">
-                        <a href="#" class="button">More Works</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        //
-        <div class="testimonial-area sp bg1">
-            <div class="container">
-                <div class="section-title white">
-                    <h2>Clients Review</h2>
-                    <p>我们业务广泛主要致力于以下业务</p>
-                </div>
-                <div class="testimonial-slider">
-                    <div class="single-slide">
-                        <div class="inner">
-                            <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
-                            <div class="client-info">
-                                <div class="client-img">
-                                    <img src="/www/images/client.jpg" alt="client">
-                                </div>
-                                <div class="client-data">
-                                    <h4>Jhon Doe</h4>
-                                    <span>Designer</span>
+                                <div class="content">
+                                    <p>
+                                        <%=o.info%>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="inner">
-                            <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
-                            <div class="client-info">
-                                <div class="client-img">
-                                    <img src="/www/images/client.jpg" alt="client">
-                                </div>
-                                <div class="client-data">
-                                    <h4>Jhon Doe</h4>
-                                    <span>Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="inner">
-                            <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
-                            <div class="client-info">
-                                <div class="client-img">
-                                    <img src="/www/images/client.jpg" alt="client">
-                                </div>
-                                <div class="client-data">
-                                    <h4>Jhon Doe</h4>
-                                    <span>Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="inner">
-                            <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
-                            <div class="client-info">
-                                <div class="client-img">
-                                    <img src="/www/images/client.jpg" alt="client">
-                                </div>
-                                <div class="client-data">
-                                    <h4>Jhon Doe</h4>
-                                    <span>Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <%
+                        }
+                    %>
                 </div>
             </div>
         </div>
@@ -296,7 +159,7 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
-                    <p>我们业务广泛主要致力于以下业务</p>
+                    <p>关于我们快速知道</p>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
