@@ -14,7 +14,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     var marker = new google.maps.Marker({
         position: myCenter,
-        icon: 'assets/img/ext/map-marker.png',
+        icon: '/www/images/ext/map-marker.png',
         animation: google.maps.Animation.BOUNCE
     });
     marker.setMap(map);
